@@ -4,54 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KPMG @ Dhaalan: Higher Education, Skills, and Career Expo 2024</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         /* Basic styling for KPMG-themed website with background image */
         body {
-            font-family: 'Dancing Script', cursive, 'Roboto', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             color: #ffffff;
             text-align: center;
             background: 
-                linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), /* Semi-transparent overlay */
-                url('https://images.unsplash.com/photo-1529494712043-8e3926dbf0ac') no-repeat center center fixed; /* KPMG-themed background image */
+                linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.333)),
+                url('dembee-tsogoo-zVNU8WC1ino-unsplash.jpg') no-repeat center center fixed;
             background-size: cover;
-            height: 100vh; /* Ensure full-screen background */
+            height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Center content vertically */
-            align-items: center; /* Center content horizontally */
+            justify-content: center;
+            align-items: center;
         }
+        
         header {
-            background-color: rgba(0, 94, 184, 0.85); /* Semi-transparent KPMG blue */
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('header-background.jpg') no-repeat center center;
+            background-size: cover;
             color: #fff;
             padding: 40px 20px;
-            border-bottom: 4px solid #003d72; /* Adds a bottom border to the header */
+            border-bottom: 4px solid #003d72;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             width: 100%;
-            box-sizing: border-box; /* Ensure padding doesn't affect width */
+            box-sizing: border-box;
         }
+        
         header h1 {
             margin: 0;
-            font-size: 3.5em; /* Larger title for desktop */
-            font-weight: 700;
-            font-family: 'Dancing Script', cursive; /* Apply cursive font to header */
+            font-size: 3.2em;
+            font-weight: bold;
         }
+        
         header p {
-            font-size: 1.5em; /* Larger description text */
+            font-size: 1.3em;
             font-weight: 400;
             margin-top: 10px;
-            font-family: 'Roboto', sans-serif; /* Default font for text */
         }
+        
         .content {
             padding: 40px 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
+        
         .buttons {
             display: flex;
             justify-content: center;
@@ -60,43 +63,49 @@
             flex-wrap: wrap;
             align-items: center;
         }
+        
         .button {
             padding: 18px 40px;
             font-size: 18px;
             color: white;
-            background-color: #005eb8; /* KPMG blue */
+            background-color: #0000b8;
             border: none;
-            border-radius: 50px; /* Rounded buttons for a modern look */
+            border-radius: 50px;
             cursor: pointer;
             text-decoration: none;
             transition: all 0.3s ease;
-            font-weight: 500;
+            font-weight: bold; /* Bold text in buttons */
             text-align: center;
             display: inline-block;
-            touch-action: manipulation; /* Optimize for touch */
+            touch-action: manipulation;
         }
+        
         .button:active {
-            transform: scale(0.95); /* Slight shrink effect on tap */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow on press */
+            transform: scale(0.95);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
+        
         .button:hover {
-            background-color: #003d72; /* Darker blue on hover (applies for mouse-based interactions) */
+            background-color: #000872;
         }
 
         /* Responsive styling for mobile */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2.5em; /* Adjust header size on small screens */
+                font-size: 2.2em;
             }
+            
             header p {
-                font-size: 1.2em; /* Adjust description text */
+                font-size: 1.1em;
             }
+            
             .buttons {
                 flex-direction: column;
                 gap: 15px;
                 justify-content: center;
                 align-items: center;
             }
+            
             .button {
                 width: 100%;
                 padding: 18px 0;
