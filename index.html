@@ -21,7 +21,7 @@
             height: 100vh; /* Ensure full-screen background */
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: center; /* Center content vertically */
             align-items: center; /* Center content horizontally */
         }
         header {
@@ -31,6 +31,8 @@
             border-bottom: 4px solid #003d72; /* Adds a bottom border to the header */
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+            width: 100%;
+            box-sizing: border-box; /* Ensure padding doesn't affect width */
         }
         header h1 {
             margin: 0;
@@ -77,16 +79,6 @@
         .button:hover {
             background-color: #003d72; /* Darker blue on hover (applies for mouse-based interactions) */
         }
-        footer {
-            background-color: rgba(34, 34, 34, 0.9); /* Dark footer */
-            color: #fff;
-            padding: 15px;
-            margin-top: 40px;
-            font-size: 0.9em;
-        }
-        footer p {
-            margin: 0;
-        }
 
         /* Responsive styling for mobile */
         @media (max-width: 768px) {
@@ -99,6 +91,8 @@
             .buttons {
                 flex-direction: column;
                 gap: 15px;
+                justify-content: center;
+                align-items: center;
             }
             .button {
                 width: 100%;
@@ -127,11 +121,6 @@
             <a href="https://forms.gle/Zcth2fMapRy1tohD6" target="_blank" class="button">Send Us Your CV</a>
         </div>
     </div>
-
-    <!-- Footer section -->
-    <footer>
-        <p>&copy; 2024 KPMG. All rights reserved.</p>
-    </footer>
 
 </body>
 </html>
