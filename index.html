@@ -13,24 +13,31 @@
             color: #ffffff;
             text-align: center;
             background: 
-                linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Semi-transparent overlay */
+                linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* Semi-transparent overlay */
                 url('https://example.com/earth-from-space.jpg') no-repeat center center fixed; /* Replace with actual image URL */
             background-size: cover;
+            height: 100vh; /* Ensure full-screen background */
         }
         header {
-            background-color: rgba(0, 94, 184, 0.9); /* Semi-transparent dark blue */
+            background-color: rgba(0, 94, 184, 0.9); /* Semi-transparent KPMG blue */
             color: #fff;
             padding: 20px;
+            border-bottom: 4px solid #003d72; /* Adds a bottom border to the header */
         }
         header h1 {
             margin: 0;
+            font-size: 3em; /* Larger title for desktop */
+        }
+        header p {
+            font-size: 1.2em; /* Slightly larger description text */
         }
         .content {
             padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         .buttons {
             display: flex;
-            flex-direction: row;
             justify-content: center;
             gap: 20px;
             margin-top: 30px;
@@ -40,24 +47,36 @@
             padding: 15px 30px;
             font-size: 18px;
             color: white;
-            background-color: #005eb8;
+            background-color: #005eb8; /* KPMG blue */
             border: none;
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
         .button:hover {
-            background-color: #004080;
+            background-color: #003d72; /* Darker blue on hover */
+            transform: scale(1.05); /* Slight zoom effect */
         }
         footer {
-            background-color: rgba(34, 34, 34, 0.9);
+            background-color: rgba(34, 34, 34, 0.9); /* Dark footer */
             color: #fff;
             padding: 10px;
             margin-top: 40px;
         }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
         /* Responsive styling for mobile */
         @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em; /* Adjust header size on small screens */
+            }
+            header p {
+                font-size: 1em; /* Adjust description text */
+            }
             .buttons {
                 flex-direction: column;
                 gap: 10px;
@@ -86,7 +105,7 @@
         <div class="buttons">
             <a href="https://www.kpmg.com" target="_blank" class="button">About KPMG</a>
             <a href="https://www.linkedin.com/company/kpmg" target="_blank" class="button">Visit Our LinkedIn</a>
-            <a href="https://forms.gle/Zcth2fMapRy1tohD6" target="_blank" class="button">Send Us your CV!!</a>
+            <a href="https://forms.gle/Zcth2fMapRy1tohD6" target="_blank" class="button">Send Us your CV</a>
         </div>
     </div>
 
