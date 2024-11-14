@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KPMG @ Dhaalan: Higher Education, Skills, and Career Expo 2024</title>
     <style>
+        /* Ensure the body and html elements take full height */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
         /* Basic styling for KPMG-themed website with background image */
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             color: #ffffff;
             text-align: center;
             background: 
                 linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.333)),
                 url('dembee-tsogoo-zVNU8WC1ino-unsplash.jpg') no-repeat center center fixed;
             background-size: cover;
-            height: 100vh;
+            background-attachment: fixed;
+            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -29,7 +35,7 @@
                 url('header-background.jpg') no-repeat center center;
             background-size: cover;
             color: #fff;
-            padding: 40px 20px;
+            padding: 20px 10px; /* Reduced padding */
             border-bottom: 4px solid #003d72;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -74,7 +80,7 @@
             cursor: pointer;
             text-decoration: none;
             transition: all 0.3s ease;
-            font-weight: bold; /* Bold text in buttons */
+            font-weight: bold;
             text-align: center;
             display: inline-block;
             touch-action: manipulation;
@@ -92,7 +98,7 @@
         /* Responsive styling for mobile */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2.2em;
+                font-size: 1.8em;
             }
             
             header p {
@@ -128,9 +134,9 @@
 
         <!-- Buttons section -->
         <div class="buttons">
-            <a href="https://www.kpmg.com" target="_blank" class="button">About KPMG</a>
-            <a href="https://mv.linkedin.com/company/kpmg-maldives" target="_blank" class="button">Visit Our LinkedIn</a>
-            <a href="https://forms.gle/Zcth2fMapRy1tohD6" target="_blank" class="button">Send Us Your CV</a>
+            <a href="https://www.kpmg.com" target="_blank" class="button">Discover KPMG</a>
+            <a href="https://mv.linkedin.com/company/kpmg-maldives" target="_blank" class="button">Connect on LinkedIn</a>
+            <a href="https://forms.gle/Zcth2fMapRy1tohD6" target="_blank" class="button">Submit Your CV</a>
         </div>
     </div>
 
